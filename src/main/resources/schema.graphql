@@ -1,0 +1,30 @@
+schema {
+	query: Query
+}
+
+type Query {
+    pokemons(offset: Int = 0, limit: Int = 0): [Pokemon]
+    abilities(offset: Int = 0, limit: Int = 0): [Ability]
+    types(offset: Int = 0, limit: Int = 0): [Type]
+    pokemon(id: ID): Pokemon
+}
+
+type Pokemon {
+	id: ID
+	name: String!
+	height: Float
+	weight: Float
+	abilities: [Ability]
+	types: [Type]
+}
+
+type Ability {
+	id: ID
+	name: String!
+	is_hidden: Boolean
+}
+
+type Type {
+	id: ID
+	name: String!
+}
