@@ -13,5 +13,4 @@ public class Ability {
 
 	private Integer id;
 	private String name;
-	private Boolean isHidden;
 }

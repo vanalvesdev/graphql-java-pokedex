@@ -30,6 +30,5 @@ public class GraphQLEndpoint extends SimpleGraphQLServlet{
 				 .build()
 				 .makeExecutableSchema();
 	}
-
-
+	
 }
